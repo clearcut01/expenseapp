@@ -241,5 +241,63 @@ main{
   position: relative;
   margin-top: 7em;
   margin-bottom: -7em;
-  margin-left: 7em;;
+  margin-left: 7em;
+}
+
+.logoForm{
+  height:50%;
+  width: 50%;
+  filter:invert(50%);
+  margin-left: 25%;
+  position: relative;
+}
+
+.formpage{
+  background-color: aliceblue;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 2%;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.form-title, .center{
+  text-align: center;
+}
+
+.form-title, fieldset{
+  background-color: rgb(164, 194, 249);
+  color: #FFF;
+  border-radius: 10px;
+  padding:4%;
+  margin: 2%;
+  border: none;
+}
+
+.form-title{
+  margin-top:0%;
+}
+
+.submitbutton{
+  padding:3%;
+  padding-left: 9%;
+  padding-right:9%;
+  margin-left: 8px;
+  background-color: rgb(164, 194, 249);
+  color: #FFF;
+  border-radius: 10px;
+  border:none;
+  font-size: medium;
+}
+
+.submitbutton:hover{
+  background: rgb(164, 194, 249);
+  color: #fff;
+  box-shadow: 0 0 5px rgb(164, 194, 249),
+              0 0 25px rgb(164, 194, 249),
+              0 0 50px rgb(164, 194, 249)
 }
