@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { claimApproval } from "./claimApproval.js";
 
 const Mainpage = () =>{
     let navigate = useNavigate();
@@ -16,7 +17,12 @@ const Mainpage = () =>{
     
       const onClick = () =>{
         navigate("/")
-      }
+    }
+
+    const approveClaims = () => {
+        navigate("/claimApproval")
+    }
+
     return(
         
         <div className="app">
@@ -36,7 +42,7 @@ const Mainpage = () =>{
                 <div className="date">{dateBuilder(new Date())}</div>
             </div>
             <div className="overview">
-                <div className="main-overview">Line Manager</div>
+                    <div className="main-overview" onClick={approveClaims}>Approve/Deny Claims</div>
             </div>
             </main>
             <footer className="footer">
