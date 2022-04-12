@@ -132,7 +132,12 @@ main{
 
 .select-use .login-button{
   position: relative;
-  left: 9em;
+  left: 12em;
+}
+
+.title{
+  color: white;
+  font-weight: bold;
 }
 
 .login-button{
@@ -180,14 +185,82 @@ main{
   text-align: center;
 }
 
-.overview:hover{
+.overview2{
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 1em 1em 1em 1em;
+  margin-top: -1.3em;
+  margin-right: 60%;
+
+  box-shadow: 0em 0.3125em rgba(0,0,0,0.2);
+  color: #313131;
+  font-size: 1.25em;
+
+  transition: 0.4s ease;
+  position: relative;
+
+  text-align: center;
+  left: 55%;
+  top: -6em;
+}
+
+.overview3{
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 1em 1em 1em 1em;
+  margin-top: -1.3em;
+  margin-right: 60%;
+
+  box-shadow: 0em 0.3125em rgba(0,0,0,0.2);
+  color: #313131;
+  font-size: 1.25em;
+
+  transition: 0.4s ease;
+  position: relative;
+  top: -1em;
+
+  text-align: center;
+}
+
+.overview4{
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 1em 1em 1em 1em;
+  margin-top: -1.3em;
+  margin-right: 60%;
+
+  box-shadow: 0em 0.3125em rgba(0,0,0,0.2);
+  color: #313131;
+  font-size: 1.25em;
+
+  transition: 0.4s ease;
+  position: relative;
+
+  text-align: center;
+  left: 55%;
+  top: -6em;
+}
+
+.overview:hover, .overview2:hover, .overview3:hover, .overview4:hover{
   color: white;
 }
 
 .footer{
   position: relative;
-  margin-top: -1em;
   text-align: center;
+  margin-top: -5.5em;
 }
 
 .footer-text:hover{
@@ -300,4 +373,37 @@ main{
   box-shadow: 0 0 5px rgb(164, 194, 249),
               0 0 25px rgb(164, 194, 249),
               0 0 50px rgb(164, 194, 249)
+}
+
+.claim{
+  width: 5em;
+}
+
+.currentexpenses{
+  width: 5em;
+  height: 5em;
+}
+
+.chimg{
+  width: 5em;
+  height: 5em;
+}
+
+.reportsimg{
+  width: 5em;
+  height: 5em;
+}
+
+.notif{
+  width: 4em;
+  height: 4em;
+  position: relative;
+  left: -9em;
+}
+
+.setting{
+  width: 4em;
+  height: 4em;
+  position: relative;
+  left: 7.4em;
 }
