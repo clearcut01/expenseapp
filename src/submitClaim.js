@@ -36,8 +36,17 @@ const SubmitClaim = () =>{
                     <input type="file" className='image' accept="image/*"></input>
                 </fieldset>
                 <fieldset>
+                    <label>Claim Type</label><br></br>
+                        <select className="entry" name="currency" required>
+                            <option disabled selected>Select Currency</option>
+                            <option name="GBP">£ GBP</option>
+                            <option name="USD">$ USD</option>
+                            <option name="EUR">€ EUR</option>
+                            <option name="YEN">¥ YEN</option>
+                            <option name="other">...</option>
+                        </select>
                     <label>Purchase Amount</label><br></br>
-                    <input className="entry" type="text" name="purchaseAmount" placeholder="£..." required></input>
+                    <input className="entry" type="text" name="purchaseAmount" placeholder="Amount" required></input>
                     <br></br>
                     <label>Description</label><br></br>
                     <input className="entry" type="text" name="description" placeholder="Enter text..." required></input>
@@ -48,9 +57,9 @@ const SubmitClaim = () =>{
                         <option name="overnightStay">Overnight Stay</option>
                         <option name="itemsForEventOrMeeting">Event or Meeting</option>
                         <option name="travel">Travel</option>
-                        <option name="travel">Food</option>
-                        <option name="travel">Equipment</option>
-                        <option name="travel">Miscellaneous</option>
+                        <option name="food">Food</option>
+                        <option name="equipment">Equipment</option>
+                        <option name="miscellaneous">Miscellaneous</option>
                     </select> 
                     <br></br>
                     <label>Date</label><br></br>
