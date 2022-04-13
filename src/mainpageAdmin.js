@@ -7,6 +7,7 @@ import manage from './assets/manage.png';
 import notif from './assets/notif.png';
 import settings from './assets/settings.png';
 import register from './assets/register.png';
+import React from 'react';
 
 const Mainpage = () =>{
     let navigate = useNavigate();

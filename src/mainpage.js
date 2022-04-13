@@ -6,6 +6,7 @@ import reports from './assets/reports.png';
 import claimhistory from './assets/claimhistory.png';
 import notif from './assets/notif.png';
 import settings from './assets/settings.png';
+import React from 'react';
 
 const Mainpage = () =>{
     let navigate = useNavigate();
@@ -27,6 +28,9 @@ const Mainpage = () =>{
 
     const fileAClaim = () => {
         navigate("/submitClaim")
+    }
+    const currentexpenses = () => {
+        navigate("/submittedClaims")
     }
     return(
         <div className="app">

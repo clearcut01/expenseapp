@@ -7,6 +7,7 @@ import claimhistory from './assets/claimhistory.png';
 import notif from './assets/notif.png';
 import settings from './assets/settings.png';
 import audits from './assets/ausits.png';
+import React from 'react';
 
 const Mainpage = () =>{
     let navigate = useNavigate();
