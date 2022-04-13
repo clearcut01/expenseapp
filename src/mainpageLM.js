@@ -1,5 +1,12 @@
-import { useNavigate } from "react-router-dom";
-import { claimApproval } from "./claimApproval.js";
+import {useNavigate} from "react-router-dom";
+import SubmitClaim from "./submitClaim";
+import fileclaim from './assets/fileclaim.png';
+import currentexpenses from './assets/currentexpenses.png';
+import reports from './assets/reports.png';
+import claimhistory from './assets/claimhistory.png';
+import notif from './assets/notif.png';
+import settings from './assets/settings.png';
+import audits from './assets/ausits.png';
 
 const Mainpage = () =>{
     let navigate = useNavigate();
@@ -13,43 +20,55 @@ const Mainpage = () =>{
         let year = d.getFullYear();
     
         return `${day} ${date} ${month} ${year}`
-      }
+    }
     
-      const onClick = () =>{
+    const onClick = () =>{
         navigate("/")
     }
 
-    const approveClaims = () => {
+    const pendingclaim = () => {
         navigate("/claimApproval")
     }
-
     return(
-        
         <div className="app">
             <main>
-            <div className="select-use">
-                <select name="use" className="select">
-                <option className="doprdown-content">---select an option---</option>
-                <option className="dropdown-content">File a claim</option>
-                <option className="dropdown-content">View past claims</option>
-                <option className="dropdown-content">View pending claims</option>
-                </select>
-                <button type="button" className="search-button">Search</button>
-                <button type="login" className="login-button" onClick={onClick}>Logout</button>
-            </div>
-            <div className="location-box">
-                <div className="location">London, UK</div>
-                <div className="date">{dateBuilder(new Date())}</div>
-            </div>
-            <div className="overview">
-                    <div className="main-overview" onClick={approveClaims}>Approve/Deny Claims</div>
-            </div>
+                <div className="select-use">
+                    <p className="title">Line Manager Home
+                    <button type="login" className="login-button-LM" onClick={onClick}>Logout</button>
+                    </p>
+                </div>
+                <div className="location-box">
+                    <div className="location">London, UK</div>
+                    <div className="date">{dateBuilder(new Date())}</div>
+                </div>
+                <div className="overview">
+                    <img className="claim" src = {fileclaim}></img>
+                    <div className="main-overview" onClick={pendingclaim}>Pending Claims</div>
+                </div>
+                <div className="overview2">
+                    <img className="currentexpenses" src = {claimhistory}></img>
+                    <div className="current-expenses" >All Claims</div>
+                </div>
+                <div className="overview3">
+                    <img className="reportsimg" src = {reports}></img>
+                    <div className="reports"> Reports</div>
+                </div>
+                <div className="overview4">
+                    <img className="chimg" src = {audits}></img>
+                    <div className="claimhistory">Audits</div>
+                </div>
             </main>
+            
             <footer className="footer">
-            <a className="footer-text">FDM Expense Tracker App</a>
+                <div>
+                    <img className="notif" src = {notif}></img>
+                    <img className="setting" src = {settings}></img>
+                </div>
+                <a className="footer-text">FDM Expense Tracker App</a>
             </footer>
-      </div>
+        </div>
     );
 }
 export default Mainpage;
+
 

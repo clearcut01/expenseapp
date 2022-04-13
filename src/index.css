@@ -140,7 +140,7 @@ main{
   font-weight: bold;
 }
 
-.login-button{
+.login-button, .login-button-LM{
   border-radius: 1em 1em 1em 1em;
   border: none;
   color: white;
@@ -157,7 +157,12 @@ main{
   border: 0.125em solid #008CBA;
 }
 
-.login-button:hover{
+.login-button-LM{
+  position: relative;
+  left: 9.4em;
+}
+
+.login-button:hover, .login-button-LM:hover{
   background-color: #008CBA;
   color: white;
 }
@@ -263,7 +268,13 @@ main{
   margin-top: -5.5em;
 }
 
-.footer-text:hover{
+.footerlogin{
+  position: relative;
+  text-align: center;
+  margin-top: -1.2em;
+}
+
+.footer-text:hover, .footerlogin-text:hover{
   color: purple;
 }
 

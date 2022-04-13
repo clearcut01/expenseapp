@@ -33,7 +33,7 @@ const Login = () =>{
                 <button type="submit" className="loginbutton" onClick={onClick}>Login</button>
             </form>
         </main>
-        <footer className="footer">
+        <footer className="footerlogin">
             <a className="footer-text">FDM Expense Tracker App</a>
         </footer>
         </>
