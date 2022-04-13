@@ -8,7 +8,6 @@ import notif from './assets/notif.png';
 import settings from './assets/settings.png';
 import register from './assets/register.png';
 import React from 'react';
-import ShowReport from "./showReports";
 
 const Mainpage = () =>{
     let navigate = useNavigate();
@@ -31,15 +30,11 @@ const Mainpage = () =>{
     const pendingclaim = () => {
         navigate("/claimApproval")
     }
-
-    const showreports = () => {
-        navigate("/showReports")
-    }
     return(
         <div className="app">
             <main>
                 <div className="select-use">
-                    <p className="title">Administrator Home
+                    <p className="title">Administrator Reports
                     <button type="login" className="login-button-LM" onClick={onClick}>Logout</button>
                     </p>
                 </div>
@@ -48,20 +43,12 @@ const Mainpage = () =>{
                     <div className="date">{dateBuilder(new Date())}</div>
                 </div>
                 <div className="overview">
-                    <img className="claim" src = {register}></img>
-                    <div className="main-overview">Register Users</div>
+                    <img className="claim" src = {reports}></img>
+                    <div className="main-overview" ><a >Monthly Total</a></div>
                 </div>
                 <div className="overview2">
-                    <img className="currentexpenses" src = {manage}></img>
-                    <div className="current-expenses" >Manage Users</div>
-                </div>
-                <div className="overview3">
-                    <img className="reportsimg" src = {reports}></img>
-                    <div className="reports"onClick={showreports}> Reports</div>
-                </div>
-                <div className="overview4">
-                    <img className="chimg" src = {downtime}></img>
-                    <div className="claimhistory">Downtime</div>
+                    <img className="currentexpenses" src = {reports}></img>
+                    <div className="current-expenses" ><a >Expense Types</a></div>
                 </div>
             </main>
             
