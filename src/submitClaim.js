@@ -48,6 +48,9 @@ const SubmitClaim = () =>{
                         <option name="overnightStay">Overnight Stay</option>
                         <option name="itemsForEventOrMeeting">Event or Meeting</option>
                         <option name="travel">Travel</option>
+                        <option name="travel">Food</option>
+                        <option name="travel">Equipment</option>
+                        <option name="travel">Miscellaneous</option>
                     </select> 
                     <br></br>
                     <label>Date</label><br></br>
