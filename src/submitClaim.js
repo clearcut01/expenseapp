@@ -22,6 +22,8 @@ const SubmitClaim = () =>{
   
         navigate("/mainpage")
     }
+
+
     return(
         <>
         <div className="formpage">

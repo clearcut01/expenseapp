@@ -29,7 +29,7 @@ const Mainpage = () =>{
     const fileAClaim = () => {
         navigate("/submitClaim")
     }
-    const currentexpenses = () => {
+    const viewClaims = () => {
         navigate("/submittedClaims")
     }
     return(
@@ -50,7 +50,7 @@ const Mainpage = () =>{
                 </div>
                 <div className="overview2">
                     <img className="currentexpenses" src = {currentexpenses}></img>
-                    <div className="current-expenses" >Current Expenses</div>
+                    <div className="current-expenses" onClick={viewClaims}>Current Expenses</div>
                 </div>
                 <div className="overview3">
                     <img className="reportsimg" src = {reports}></img>
