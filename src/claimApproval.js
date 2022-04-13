@@ -68,7 +68,7 @@ const ClaimApproval = () => {
                                 <th>{ claim3!=="Pending" ? <span>Setteled</span> : <><button onClick={() => AppDen(setclaim3, "Approved")} type="button" className="submitbutton"> Approve </button><button onClick={() => AppDen(setclaim3, "Denied")} type="button" className="submitbutton">Deny</button></>}</th>
                             </tr>
                             <tr>
-                                <th>Mark Collins</th>
+                                <th>Prince Eze</th>
                                 <th>$23.45</th>
                                 <th>{claim4}</th>
                                 <th>claim.pdf</th>
