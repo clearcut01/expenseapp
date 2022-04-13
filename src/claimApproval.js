@@ -48,28 +48,28 @@ const ClaimApproval = () => {
                             </tr>
                             <tr>
                                 <th>Amy Darwin</th>
-                                <th>$12.75</th>
+                                <th>£12.75</th>
                                 <th>{claim1}</th>
                                 <th>Claim.pdf</th>
                                 <th>{ claim1!=="Pending" ? <span>Setteled</span> : <><button onClick={() => AppDen(setclaim1, "Approved")} type="button" className="submitbutton"> Approve </button><button onClick={() => AppDen(setclaim1, "Denied")} type="button" className="submitbutton">Deny</button></>}</th>
                             </tr>
                             <tr>
                                 <th>James Peters</th>
-                                <th>$34.34</th>
+                                <th>£34.34</th>
                                 <th>{claim2}</th>
                                 <th>expense_claim.pdf</th>
                                 <th>{ claim2!=="Pending" ? <span>Setteled</span> : <><button onClick={() => AppDen(setclaim2, "Approved")} type="button" className="submitbutton"> Approve </button><button onClick={() => AppDen(setclaim2, "Denied")} type="button" className="submitbutton">Deny</button></>}</th>
                             </tr>
                             <tr>
                                 <th>Arch Mathis</th>
-                                <th>$45.32</th>
+                                <th>£45.32</th>
                                 <th>{claim3}</th>
                                 <th>claim12.pdf</th>
                                 <th>{ claim3!=="Pending" ? <span>Setteled</span> : <><button onClick={() => AppDen(setclaim3, "Approved")} type="button" className="submitbutton"> Approve </button><button onClick={() => AppDen(setclaim3, "Denied")} type="button" className="submitbutton">Deny</button></>}</th>
                             </tr>
                             <tr>
                                 <th>Prince Eze</th>
-                                <th>$23.45</th>
+                                <th>£23.45</th>
                                 <th>{claim4}</th>
                                 <th>claim.pdf</th>
                                 <th>{ claim4!=="Pending" ? <span>Setteled</span> : <><button onClick={() => AppDen(setclaim4, "Approved")} type="button" className="submitbutton"> Approve </button><button onClick={() => AppDen(setclaim4, "Denied")} type="button" className="submitbutton">Deny</button></>}</th>

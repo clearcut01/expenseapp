@@ -29,7 +29,7 @@ const ClaimApproval = () => {
                             <tr>
                                 <th>1</th>
                                 <th>Overnight Stay</th>
-                                <th>$12.75</th>
+                                <th>£12.75</th>
                                 <th>Approved</th>
                                 <th><a>Edit / Remove</a></th>
 
@@ -37,21 +37,21 @@ const ClaimApproval = () => {
                             <tr>
                                 <th>2</th>
                                 <th>Event or Meeting</th>
-                                <th>$34.34</th>
+                                <th>£34.34</th>
                                 <th>Pending</th>
                                 <th><a>Edit / Remove</a></th>
                             </tr>
                             <tr>
                                 <th>3</th>
                                 <th>Overnight Stay</th>
-                                <th>$45.32</th>
+                                <th>£45.32</th>
                                 <th>Approved</th>
                                 <th><a>Edit / Remove</a></th>
                             </tr>
                             <tr>
                                 <th>4</th>
                                 <th>Travel</th>
-                                <th>$23.45</th>
+                                <th>£23.45</th>
                                 <th>Approved</th>
                                 <th><a>Edit / Remove</a></th>
                             </tr>
